@@ -1,6 +1,6 @@
 import requests
 import json
-
+import wmi
 
 def get_response(message: str) -> str:
 
@@ -26,6 +26,7 @@ def get_response(message: str) -> str:
                     vreme 3h - prikazivanje prognoze za naredna 3h
                     vreme osvezi - pribavljanje novih podataka za prognozu
                     rad main / rad alt - edom 
+                    temps - prikazivanje hardware monitora
                 '''
     
     if p_message == 'vreme osvezi':
@@ -83,6 +84,28 @@ def get_response(message: str) -> str:
             with open('vreme.txt','r', encoding='utf-8') as f:
                 izlaz = f.read()
             return izlaz
+    
+    if p_message == 'temps':
+        w = wmi.WMI(namespace="root\OpenHardwareMonitor")
+        temperature_infos = w.Sensor()
+        interest = ['GPU Core','GPU Fan','CPU Package', 'CPU Total']
+        w1 = w2 = ''
+        with open('temps.txt', 'w', encoding='utf-8') as f:
+                f.write('Hardware Monitor: \n\n')
+        for sensor in temperature_infos:
+            if sensor.name in interest:
+                f = open('temps.txt', 'a', encoding='utf-8')
+                if sensor.SensorType=='Temperature':
+                    f.write(str(sensor.Name + ' {}C'.format("%.1f"%sensor.Value)+'\n'))
+                elif sensor.SensorType=='Fan':
+                    f.write(str(sensor.Name + ' {}%'.format(sensor.Value)+'\n'))
+                else:
+                    f.close()
+                
+        with open('temps.txt','r', encoding='utf-8') as f:
+                izlaz = f.read()
+                return izlaz
+              
             
                  
     return "`Wrong command!`"

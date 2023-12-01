@@ -1,26 +1,24 @@
 Vremenska prognoza Uzice, za naredna 3 sata: 
-Vremenska prognoza Uzice za 23h:
 
-                                Temperatura : 10.0C
-                                Realan osecaj : 4.6C
+Vremenska prognoza Uzice za 13h:
+                                Temperatura : 15.9C
+                                Realan osecaj : 11.9C
+                                Oblacnost: Showers
+                                Vlaznost vazduha: 57%
+                                Mogucnost padanja kise: 43%
+
+                                Vremenska prognoza Uzice za 14h:
+                                Temperatura : 15.5C
+                                Realan osecaj : 12.3C
                                 Oblacnost: Cloudy
-                                Vlaznost vazduha: 74%
-                                Mogucnost padanja kise: 32%
+                                Vlaznost vazduha: 56%
+                                Mogucnost padanja kise: 40%
 
-                                Vremenska prognoza Uzice za 00h:
-
-                                Temperatura : 9.8C
-                                Realan osecaj : 4.0C
+                                Vremenska prognoza Uzice za 15h:
+                                Temperatura : 15.0C
+                                Realan osecaj : 11.3C
                                 Oblacnost: Cloudy
-                                Vlaznost vazduha: 78%
-                                Mogucnost padanja kise: 21%
-
-                                Vremenska prognoza Uzice za 01h:
-
-                                Temperatura : 9.8C
-                                Realan osecaj : 3.8C
-                                Oblacnost: Cloudy
-                                Vlaznost vazduha: 76%
-                                Mogucnost padanja kise: 0%
+                                Vlaznost vazduha: 57%
+                                Mogucnost padanja kise: 36%
 
                                 

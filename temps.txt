@@ -1,0 +1,5 @@
+Hardware Monitor: 
+
+GPU Core 51.0C
+GPU Fan 0.0%
+CPU Package 56.9C
